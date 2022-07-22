@@ -1,0 +1,23 @@
+{
+  "name": "ableton-clone",
+  "version": "1.0.0",
+  "description": "This is a clone for the ableton.com/en/about/ clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./src/index.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wairimu-ian/ableton-clone.git"
+  },
+  "author": "Ian Moon Wairimu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wairimu-ian/ableton-clone/issues"
+  },
+  "homepage": "https://github.com/wairimu-ian/ableton-clone#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
