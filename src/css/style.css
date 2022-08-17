@@ -11,6 +11,8 @@
     --about: #FA786E;
     --logo: #FA5847;
     --try: #2778FA;
+    --middle: #B3F1C0;
+    --pk: #D5B3FE;
 }
 body {
     background-color: white;
@@ -48,7 +50,7 @@ body {
     margin-top: 2px;
     list-style-type: none;
 }
-.navigation-li-items, .navigation-links {
+.navigation-li-items .navigation-links {
     text-align: center;
     text-decoration: none;
     color: black;
@@ -117,7 +119,7 @@ body {
     color: var(--logo);
     font-size: 8rem;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 20%;
 }
 .content-h1 {
@@ -139,41 +141,216 @@ body {
     font-style: normal;
     text-align: start;
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 .grid-container-img-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     position: relative;
     place-items: center;
     grid-template-areas: 
     ". . grid1"
     ". grid2 grid1"
     ". . grid1";
+    margin-bottom: 80px;
 }
 .grid-item-1 {
     background-color: #F9F1A7;
     width: 800px;
-    height: 700px;
+    height: 800px;
     grid-area: grid1;
 }
 .grid-item-2 {
+    display: block;
     background-image: url("../images/guitar.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 500px;
     height: 600px;
     grid-area: grid2;
     z-index: 1;
+    position: absolute;
 }
 .grid-item-3 {
     background-image: url("../images/sets.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 600px;
     height: 400px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 24%;
-    right: 6%;
+    right: 30px;
+}
+.middle-content {
+    margin: auto 300px;
+}
+.h1-middle {
+    display: block;
+    margin: 0px 0px 21px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: start;
+    letter-spacing: normal;
+}
+.middle-p {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+    line-height: 30px;
+    margin-bottom: 80px;
+}
+.video-c {
+    margin-bottom: 80px;
+}
+.middle-img {
+    display: grid;
+    position: relative;
+    /* gap: 1.2rem; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "grid1 . grid4"
+    ". . grid4"
+    "grid2 . grid4";
+    margin-bottom: 80px;
+}
+.grid-middle1 {
+    display: block;
+    height: 800px;
+    width: 800px;
+    background-color: var(--middle);
+
+}
+.grid-middle2 {
+    display: block;
+    grid-area: grid1;
+    background-image: url("../images/anton.jpg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+    height: 400px;
+    width: 400px;
+    top: 10%;
+    left: 20%;
+}
+.grid-middle3 {
+    display: block;
+    grid-area: grid2;
+    background-image: url("../images/studio.jpg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 4;
+    height: 400px;
+    width: 400px;
+    bottom: 0;
+    left: 20%;
+}
+.grid-middle4 {
+    display: block;
+    grid-area: grid4;
+    position: absolute;
+    background-image: url("../images/headsets.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 400px;
+    z-index: 8;
+    right: 80%;
+    top: 14%;
+}
+.video-m {
+    display: block;
+    margin: auto 70px;
+}
+.pk-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+    grid-template-areas: 
+    " . . . pk2"
+    "pk1 . . .pk2"
+    ". . . pk2";
+    position: relative;
+    background-color: var(--pk);
+    height: 800px;
+    width: 800px;
+    margin: auto 300px;
+}
+.pk-img-1 {
+    display: block;
+    position: absolute;
+    background-image: url("../images/drumBeats.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 12;
+    left: 0;
+    transform: translateX(-70px);
+    height: 400px;
+    width: 50%;
+}
+.pk-img-2 {
+    display: block;
+    position: absolute;
+    background-image: url("../images/anna.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+    right: 0;
+    transform: translateX(200px);
+    height: 600px;
+    width: 50%;
+}
+.top-m {
+    margin-top: 80px;
+}
+.job-con {
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    margin: auto 180px;
+}
+.job-img {
+    display: block;
+    background-image: url("../images/office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 700px;
+}
+.job-h1-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B1C4FC;
+    text-align: center;
+    width: 50%;
+}
+.job-h1 {
+    width: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+.job-link {
+    color: #3379FA;
+}
+hr {
+    margin-top: 80px;
+    border: 1px solid #EFEFEF;
+}
+.footer-con {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 80px;
 }
