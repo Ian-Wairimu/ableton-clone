@@ -39,9 +39,9 @@ body {
 
 }
 .navigation-logo-img {
-    width: 250px;
-    height: 80px;
-    object-fit: cover;
+    padding-left: 20px;
+    width: 90px;
+    height: 30px;
 }
 .navigation-list-left, .navigation-items, .navigation-li-items {
     display: inline-block;
@@ -50,11 +50,11 @@ body {
     margin-top: 2px;
     list-style-type: none;
 }
-.navigation-li-items .navigation-links {
+.navigation-li-items, .navigation-links {
     text-align: center;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 600;
     font-style: normal;
@@ -69,7 +69,7 @@ body {
 }
 .try {
     color: var(--try);
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 600;
     font-style: normal;
@@ -89,7 +89,7 @@ body {
     text-align: center;
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 600;
     font-style: normal;
@@ -109,7 +109,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 600px;
     position: relative;
     text-align: center;
     margin-top: 2px;
@@ -264,7 +264,7 @@ body {
     width: 400px;
     z-index: 8;
     right: 80%;
-    top: 14%;
+    top: 10%;
 }
 .video-m {
     display: block;
@@ -314,9 +314,9 @@ body {
 }
 .job-con {
     display: flex;
-    width: 1000px;
+    width: 1200px;
     height: 400px;
-    margin: auto 180px;
+    margin: auto 100px;
 }
 .job-img {
     display: block;
@@ -336,7 +336,7 @@ body {
     width: 50%;
 }
 .job-h1 {
-    width: 60%;
+    width: 40%;
     font-size: 20px;
     font-weight: 600;
     color: #000000;
@@ -347,12 +347,95 @@ body {
 hr {
     margin-top: 80px;
     border: 1px solid #EFEFEF;
+    margin-bottom: 40px;
 }
 .footer-con {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-top: 80px;
+    margin: auto 100px;
+    width: 1200px;
+}
+.ft-logo {
+    width: 200px;
+    height: 140px;
+}
+.ft-sec-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+.sec-con {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+}
+.ft-items, .ft-list {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.ft-h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.ft-p {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.input-ft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+input[type=email] {
+    padding: 8px;
+    border: none;
+    background-color: #EEEEEE;
+    width: 70%;
+}
+.ft-btn {
+    border: none;
+    background-color: #3378FA;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px;
+    width: 112px;
+}
+.ft-lg {
+    display: flex;
+}
+.ft-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.ft-item-nv, .ft-list-nv {
+    display: inline-block;
+    padding-right: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    list-style-type: none;
+}
+.ft-im-nv-lg {
+    margin-left: auto;
+}
+select {
+    margin-right: 10px;
+    width: 40%;
+    border: none;
+    background-color: #EEEEEE;
+    padding: 10px;
 }
 
 /*# sourceMappingURL=/config.0b667c17.css.map */
