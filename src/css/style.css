@@ -437,3 +437,11 @@ select {
     background-color: #EEEEEE;
     padding: 10px;
 }
+.ft-ic-sc {
+    display: flex;
+}
+.img-ic {
+    height: 35px;
+    width: 35px;
+    margin-right: 12px;
+}
